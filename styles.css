@@ -74,7 +74,7 @@ body {
 .google-image {
     display: flex;
     margin: auto;
-    margin-top: 230px;
+    margin-top: 200px;
     max-height: 95px;
 }
 
@@ -88,8 +88,8 @@ body {
 }
 
 .form-control {
-    height: 1.5em;
-    width: 40%;
+    height: 2em;
+    width: 550px;
     border-radius: 5em;
     transition: none;
     border: 1px solid #DFE1E5;
@@ -128,10 +128,54 @@ body {
 
 .languages {
     font-size: 13px;
-    margin: 20px;
+    margin: 20px 0 278px 0;
 }
 
 .languages a {
     margin: 3px;
     color: #1A0DAB;
+}
+
+.bottom-div {
+    position: absolute;
+    width: 100%;
+    background-color: #F2F2F2;
+    font-size: 14px;
+    color: #6F6F6F;
+    bottom: 0px;
+}
+
+.bottom-div .first {
+    display: flex;
+    padding: 12px 0 12px 33px;
+    border-bottom: 1px solid #DADCE0;
+}
+
+.bottom-div .first p {
+    margin: 0;
+}
+
+.second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 29px 12px 29px;
+    margin: 0;
+}
+
+.second a {
+    margin: 0 10px 0 10px;
+    color: #6F6F6F;
+}
+
+.bottom-div .second .left {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.second .right {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
