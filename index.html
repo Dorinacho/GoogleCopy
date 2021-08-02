@@ -2,12 +2,14 @@
 <html>
 
 <head>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link class="img" rel="shortcut icon" href="./images/title-bar-image.png" />
     <title>Google</title>
-    <link rel="stylesheet" href="styles.css" />
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body>
@@ -24,8 +26,17 @@
         </div>
     </div>
 
-    <div class="middle-div">
-        <img src="./images/google.jpg" />
+    <div><img class="google-image" src="./images/google.png" /></div>
+
+    <div class="input-div">
+
+        <input type="text" class="form-control" aria-describedby="helpId" placeholder="">
+
+        <div class="search-buttons">
+            <button type="button" class="btn btn-light">Google Search</button>
+            <button type="button" class="btn btn-light">I'm Feeling Lucky</button>
+        </div>
+
     </div>
 
     <div class="bottom-div">

@@ -1,6 +1,14 @@
+*,
+*::before,
+*::after {
+    box-sizing: unset;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
 }
 
 .top-div {
@@ -61,4 +69,54 @@ body {
     padding: 5px;
     margin: 3px;
     cursor: pointer;
+}
+
+.google-image {
+    display: flex;
+    margin: auto;
+    margin-top: 230px;
+    max-height: 95px;
+}
+
+.input-div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 23px;
+}
+
+.form-control {
+    height: 1.5em;
+    width: 40%;
+    border-radius: 5em;
+    transition: none;
+    border: 1px solid #DFE1E5;
+    margin-bottom: 20px;
+}
+
+.form-control:hover {
+    box-shadow: 0px 2px 5px #E9E9E9;
+}
+
+.form-control:focus {
+    box-shadow: 0px 2px 5px #E9E9E9;
+}
+
+.btn {
+    background-color: #F8F9FA;
+    border: 1px solid #F8F9FA;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
 }
