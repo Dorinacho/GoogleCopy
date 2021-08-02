@@ -74,8 +74,8 @@ body {
 .google-image {
     display: flex;
     margin: auto;
-    margin-top: 200px;
-    max-height: 95px;
+    margin-top: 195px;
+    max-height: 100px;
 }
 
 .input-div {
@@ -84,42 +84,65 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 23px;
+    padding: 25px;
 }
 
 .wrapper {
     position: relative;
     display: flex;
-    min-width: 100px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 45px;
+    width: 560px;
+    border-radius: 5em;
+    transition: none;
+    border: 1px solid #DFE1E5;
+    margin-bottom: 20px;
+}
+
+.wrapper i {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    color: #777;
+    top: -3px;
+    opacity: 0.5;
+    padding: 5px;
+}
+
+.wrapper:hover {
+    box-shadow: 1px 1px 8px 1px #E9E9E9;
+}
+
+.wrapper:focus-within {
+    box-shadow: 1px 1px 8px 1px #E9E9E9;
+    border: 1px solid #DFE1E5;
 }
 
 .search-icon {
     position: absolute;
     opacity: 0.5;
-    top: 14px;
-    left: 15px;
     width: 15px;
-    z-index: 5;
 }
 
 .form-control {
-    height: 2em;
-    width: 550px;
+    display: flex;
+    height: 25px;
+    width: 500px;
     border-radius: 5em;
     transition: none;
-    border: 1px solid #DFE1E5;
-    margin-bottom: 20px;
-    background: "./images/search-icon.svg" top left no-repeat;
-    height: 30px;
-    padding-left: 25px;
+    border: none;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .form-control:hover {
-    box-shadow: 0px 2px 5px #E9E9E9;
+    border: none;
 }
 
-.form-control:focus {
-    box-shadow: 0px 2px 5px #E9E9E9;
+.form-control:focus-within {
+    box-shadow: none;
+    border: none;
 }
 
 .btn {
@@ -129,7 +152,7 @@ body {
     color: #3c4043;
     font-family: arial, sans-serif;
     font-size: 14px;
-    margin: 11px 4px;
+    margin: 11px 2px;
     padding: 0 16px;
     line-height: 27px;
     height: 36px;
