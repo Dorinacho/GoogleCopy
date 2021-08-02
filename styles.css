@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.top-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 10px 0 0;
+}
+
+.top-text {
+    padding-right: 15px;
+    font-size: 13px;
+}
+
+.top-text a {
+    padding: 5px;
+    text-decoration: none;
+    color: #212121;
+}
+
+.top-text a:hover {
+    text-decoration: underline;
+}
+
+.top-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-div .nine-dots {
+    display: block;
+    max-width: 16px;
+    max-height: 16px;
+    padding: 10px 15px 10px 10px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.top-div span {
+    position: absolute;
+    right: 66px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #F0F0F0;
+    display: none;
+}
+
+.top-div .nine-dots:hover+span {
+    display: block;
+}
+
+.top-div .user-image {
+    display: block;
+    max-width: 35px;
+    max-height: 35px;
+    padding: 5px;
+    margin: 3px;
+    cursor: pointer;
+}
