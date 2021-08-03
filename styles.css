@@ -7,8 +7,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    flex-shrink: 0;
-    box-sizing: border-box;
+    padding: 0;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
 .top-div {
@@ -16,6 +21,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding: 5px 10px 0 0;
+    width: 99%;
 }
 
 .top-text {
@@ -39,6 +45,14 @@ body {
     align-items: center;
 }
 
+#button {
+    background-color: #ffffff;
+    border: none;
+    width: 16px;
+    height: 16px;
+    padding: 10px 15px 10px 10px;
+}
+
 .top-div .nine-dots {
     display: block;
     max-width: 16px;
@@ -50,7 +64,7 @@ body {
 
 .top-div span {
     position: absolute;
-    right: 66px;
+    margin-right: min(57px, 57px);
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -128,7 +142,8 @@ body {
 .form-control {
     display: flex;
     height: 25px;
-    width: 500px;
+    width: max(500px, 140px);
+    max-width: 500px;
     border-radius: 5em;
     transition: none;
     border: none;
@@ -145,6 +160,11 @@ body {
     border: none;
 }
 
+.search-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .btn {
     background-color: #F8F9FA;
     border: 1px solid #F8F9FA;
@@ -152,7 +172,7 @@ body {
     color: #3c4043;
     font-family: arial, sans-serif;
     font-size: 14px;
-    margin: 11px 2px;
+    margin: 11px 6px;
     padding: 0 16px;
     line-height: 27px;
     height: 36px;
@@ -168,8 +188,11 @@ body {
 }
 
 .languages {
+    display: flex;
+    align-items: center;
     font-size: 13px;
     margin: 20px 0 278px 0;
+    flex-wrap: wrap;
 }
 
 .languages a {
@@ -200,6 +223,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 12px 29px 12px 29px;
     margin: 0;
 }
@@ -217,9 +241,56 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .second .right {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 0px) {
+    .wrapper {
+        width: 80%;
+    }
+    .wrapper i {
+        left: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: 80%;
+    }
+    .wrapper i {
+        left: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        width: 90%;
+    }
+    .wrapper i {
+        left: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        width: 560px;
+    }
+    .wrapper i {
+        left: 10px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .wrapper {
+        width: 560px;
+    }
+    .wrapper i {
+        left: 10px;
+    }
 }

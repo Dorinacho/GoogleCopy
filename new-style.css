@@ -1,0 +1,87 @@
+element {
+    --main-text-color: #212121;
+    --footer-text-color: #6F6F6F;
+    --button-color: #F8F9FA;
+    --button-text-color: #3C4043;
+    --shadow-color: #E9E9E9;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-default {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-height: 40px;
+    background-color: white !important;
+    border: none;
+    color: var(--main-text-color);
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.nine-dots {
+    display: block;
+    max-width: 16px;
+    max-height: 16px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.navbar-default .navbar-brand {
+    color: var(--main-text-color) !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: var(--main-text-color) !important;
+}
+
+.col-xs-6 {
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+.btn-group-wrap {
+    text-align: center;
+    margin-top: 30px;
+}
+
+div.btn-group {
+    margin: 0 auto;
+    text-align: center;
+    width: inherit;
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.btn-primary {
+    color: #ecf0f1 !important;
+    background-color: #2980b9 !important;
+    border-color: #2980b9 !important;
+}
