@@ -55,8 +55,8 @@ body {
 
 .top-div .nine-dots {
     display: block;
-    max-width: 16px;
-    max-height: 16px;
+    max-width: 17px;
+    max-height: 17px;
     padding: 10px 15px 10px 10px;
     z-index: 1;
     cursor: pointer;
@@ -64,7 +64,7 @@ body {
 
 .top-div span {
     position: absolute;
-    margin-right: min(57px, 57px);
+    margin-right: min(59px, 59px);
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -78,8 +78,8 @@ body {
 
 .top-div .user-image {
     display: block;
-    max-width: 38px;
-    max-height: 38px;
+    max-width: 39px;
+    max-height: 39px;
     padding: 5px;
     margin: 3px;
     cursor: pointer;
